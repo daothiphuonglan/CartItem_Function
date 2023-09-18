@@ -1,13 +1,20 @@
-import { Container,Nav, Navbar as NavbarBs, Button} from 'react-bootstrap'
+import { Nav, Navbar as NavbarBs, Button} from 'react-bootstrap'
 import {NavLink} from 'react-router-dom'
 import { useShoppingCart } from '../context/ShoppingCartContext'
+import pizza_logo from '../../public/imgs/pizza_logo.jpg'
 export function Navbar(){
     const { openCart, cartQuantity } = useShoppingCart()
     return (
         <div>
+            
+
             <NavbarBs sticky="top" className="bg-white shadow-sm mb-3" >
-               <Container>
-                  <Nav className="me-auto">
+
+               <img className="pizza_img" src={pizza_logo}/>
+               <div >
+
+                
+                  <Nav >
                     <Nav.Link to="/" as={NavLink}>Home</Nav.Link>
                     <Nav.Link to="/store" as={NavLink}>Store</Nav.Link>
                     <Nav.Link to="about/" as={NavLink}>About</Nav.Link>
@@ -44,7 +51,8 @@ export function Navbar(){
             </div>
           </Button>
                   )}
-               </Container>
+               </div>
+               <img className="pizza_img" src={pizza_logo}/>
             </NavbarBs>
         </div>
     )

@@ -1,0 +1,28 @@
+[
+    {
+        
+      "id": 1,
+      "image": "/imgs/pizza_1.jpg",
+      "name": "Pizza bufalina",
+     "quote":
+        "Tomato sauce, cherry tomatoes, and buffalo mozzarella are the standard toppings for pizza bufalina. Mozzarella di bufala, as they call it in Italy, is a type of mozzarella prepared with the milk of the Italian Mediterranean buffalo"
+    },
+    {
+      "id": 2,
+      "image": "/imgs/pizza_2.jpg",
+      "name": "Pizza ortolana",
+      "quote":
+        "The name of this classic Italian pizza translates to greengrocer’s pizza. It consists of a basic pizza dough which is smeared with tomato sauce, topped with mozzarella and grilled slices of eggplant and zucchini, then baked."
+    }
+    ,
+    {
+      "id": 2,
+      "image": "/imgs/pizza_3.jpg",
+      "name": "Pizza rustica",
+     "quote":
+        "Pizza rustica or pizzagaina is a large Italian pizza pie consisting of a pastry-like crust that goes both on top and on the bottom, and in between the crust it holds ingredients such as salami, ham, prosciutto, eggs, and Italian cheeses such as mozzarella, ricotta, Pecorino Romano, and Parmigiano Reggiano."
+    }
+    
+  ]
+  
+  
