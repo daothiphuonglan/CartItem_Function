@@ -5,18 +5,18 @@ import data from '../data/dataHome.json';
 
 
 function HeaderHome() {
-  const [people, setPeople] = useState(data);
+  const [pizzas, setPizza] = useState(data);
   const [index, setIndex] = React.useState(0);
 
   useEffect(() => {
-    const lastIndex = people.length - 1;
+    const lastIndex = pizzas.length - 1;
     if (index < 0) {
       setIndex(lastIndex);
     }
     if (index > lastIndex) {
       setIndex(0);
     }
-  }, [index, people]);
+  }, [index, pizzas]);
 
   useEffect(() => {
     const slider = setInterval(() => {
@@ -35,8 +35,8 @@ function HeaderHome() {
         </h2>
       </div>
       <div className="section-center">
-        {people.map((person, personIndex) => {
-          const { id, image, name, quote } = person;
+        {pizzas.map((pizza, personIndex) => {
+          const { id, image, name, quote } = pizza;
 
           let position = 'nextSlide';
           if (personIndex === index) {
@@ -44,7 +44,7 @@ function HeaderHome() {
           }
           if (
             personIndex === index - 1 ||
-            (index === 0 && personIndex === people.length - 1)
+            (index === 0 && personIndex === pizzas.length - 1)
           ) {
             position = 'lastSlide';
           }
