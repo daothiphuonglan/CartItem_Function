@@ -1,0 +1,22 @@
+[
+    {
+        
+      "id": 1,
+      "image": "/imgs/pizza_blog.jpg",
+      "name": "Pizza bufalina",
+     "infor":
+        "Tomato sauce, cherry tomatoes, and buffalo mozzarella are the standard toppings for pizza bufalina. Mozzarella di bufala, as they call it in Italy, is a type of mozzarella prepared with the milk of the Italian Mediterranean buffalo"
+    },
+    {
+        
+        "id": 2,
+        "image": "/imgs/pizza_blog.jpg",
+        "name": "Pizza bufalina",
+       "infor":
+          "Tomato sauce, cherry tomatoes, and buffalo mozzarella are the standard toppings for pizza bufalina. Mozzarella di bufala, as they call it in Italy, is a type of mozzarella prepared with the milk of the Italian Mediterranean buffalo"
+      }
+    
+    
+  ]
+  
+  

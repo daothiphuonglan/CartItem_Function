@@ -7,19 +7,19 @@ import { About } from './pages/About'
 import { Store } from './pages/Store'
 import { Navbar } from './components/Navbar'
 
-import {useState} from 'react'
+
 import { ShoppingCartProvider } from './context/ShoppingCartContext'
+import { Blog } from './pages/Blog'
 function App() {
-  const [selectedLocation, setSelectedLocation] = useState({
-    lat: 28.7041,
-    lng: 77.1025,
-  });
+  
   
 
   return (
     <>
     
      <ShoppingCartProvider >
+
+     
      <Navbar/>
 
 <Container>
@@ -27,6 +27,7 @@ function App() {
      <Route path="/" element={<Home></Home>}/>
      <Route path="/about" element={<About></About>}/>
      <Route path="/store" element={<Store></Store>}/>
+     <Route path="/blog" element={<Blog></Blog>}/>
    </Routes>
 </Container>
 

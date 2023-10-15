@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
-import { FaQuoteRight } from 'react-icons/fa';
+
+
 import data from '../data/dataHome.json';
 
 
@@ -29,14 +29,10 @@ function HeaderHome() {
 
   return (
     <section className="section">
-      <div className="title">
-        <h2>
-         PIZZA STORE
-        </h2>
-      </div>
+      
       <div className="section-center">
         {pizzas.map((pizza, personIndex) => {
-          const { id, image, name, quote } = pizza;
+          const { id, image } = pizza;
 
           let position = 'nextSlide';
           if (personIndex === index) {
@@ -51,20 +47,13 @@ function HeaderHome() {
 
           return (
             <article className={position} key={id}>
-              <img src={image} alt={name} className="person-img" />
-              <h4>{name}</h4>
+              <img src={image}  className="person-img" />
              
-              <p className="text">{quote}</p>
-              <FaQuoteRight className="icon" />
+              
             </article>
           );
         })}
-        <button className="prev" onClick={() => setIndex(index - 1)}>
-          <FiChevronLeft />
-        </button>
-        <button className="next" onClick={() => setIndex(index + 1)}>
-          <FiChevronRight />
-        </button>
+        
       </div>
     </section>
   );

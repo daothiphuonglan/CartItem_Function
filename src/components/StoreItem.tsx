@@ -1,7 +1,7 @@
 import { Button, Card } from "react-bootstrap"
 import { formatCurrency } from "../utilities/formatCurrency"
 import { useShoppingCart } from "../context/ShoppingCartContext"
-import { useState } from "react"
+
 
 type StoreItemProps = {
     id: number
@@ -16,17 +16,14 @@ export function StoreItem ({id,name,price,imgUrl}:StoreItemProps){
     const {getItemQuantity,
       increaseCartQuantity,
       decreaseCartQuantity, 
-      removeFromCart}
+      removeFromCart,
+      }
       = useShoppingCart()
     
       const quantity= getItemQuantity(id)
 
-      const [selectedSize, setSelectedSize] = useState('');
+     
 
-  const handleSizeSelect = (e:React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedSize(e.target.value);
-    console.log(e.target.value);
-  }
    
     return (
         <div>
@@ -43,15 +40,17 @@ export function StoreItem ({id,name,price,imgUrl}:StoreItemProps){
           <span className="ms-2 text-muted">{formatCurrency(price)}</span>
         </Card.Title>
 
-        <select className="w-70 m-3 border-blue-800 " value={selectedSize} onChange={handleSizeSelect}>
+       
+      
+
+        <div className="mt-auto">
+
+        <select className="w-70 m-3 border-blue-800 "  >
         <option value="">-- Chọn kích thước --</option>
         <option value="Lớn">Lớn</option>
         <option value="Bé">Bé</option>
         <option value="Vừa">Vừa</option>
        </select>
-       <p>Kích thước đã chọn: {selectedSize}</p>
-
-        <div className="mt-auto">
            {
             quantity===0?( <Button onClick={()=> increaseCartQuantity(id)}>Add To Cart</Button>) : 
 

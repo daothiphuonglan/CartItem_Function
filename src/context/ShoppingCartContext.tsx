@@ -36,7 +36,6 @@ export function ShoppingCartProvider ({children}: ShoppingCartProviderProps){
     const [isOpen, setIsOpen] = useState(false)
     const [cartItems, setCartItems]= useLocalStorage<CartItem[]>("shopping-cart",[])
     
-    
     const cartQuantity = cartItems.reduce (
         (quantity,item) => item.quantity+ quantity,0
     )
@@ -87,6 +86,9 @@ export function ShoppingCartProvider ({children}: ShoppingCartProviderProps){
             return currItems.filter(item=> item.id!==id)
         })
     }
+
+
+   
     return (
         <ShoppingCartContext.Provider value ={{
             getItemQuantity,

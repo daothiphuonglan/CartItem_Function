@@ -1,19 +1,21 @@
 
 import HeaderHome from "../components/HeaderHome";
-import Map from "../components/Map";
-import SearchLocationInput from '../components/Address_Map'
-import {useState} from 'react'
+
+
+
+import FeedBack from "../components/FeedBack";
+import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 export function Home () {
-    const [selectedLocation, setSelectedLocation] = useState({
-        lat: 28.7041,
-        lng: 77.1025,
-      });
+    
     return (
         <div>
+            <Banner></Banner>
             <HeaderHome></HeaderHome>
            
-        <SearchLocationInput setSelectedLocation={setSelectedLocation} />
-        <Map selectedLocation={selectedLocation} />
+
+           <FeedBack></FeedBack>
+           <Footer></Footer>
     </div>
         
     )
