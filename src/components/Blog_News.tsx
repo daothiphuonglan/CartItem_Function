@@ -11,6 +11,23 @@ type Blog_News= {
 
 }
 export function Blog_News( ) {
+     const [listBlog,setListBlog]= useState(news)
+     return (
+          
+         <div >
+              {
+               listBlog.map((list)=>{
+                     return (
+                         <div key={list.id}>
+                              <img src={list.image}/>
+                              <h1>{list.name}</h1>
+                              <p>{list.infor}</p>
+                         </div>
+                     )
+               })
+              }
+         </div>
+     )
      
    
     

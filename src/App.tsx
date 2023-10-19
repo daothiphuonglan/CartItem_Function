@@ -10,6 +10,7 @@ import { Navbar } from './components/Navbar'
 
 import { ShoppingCartProvider } from './context/ShoppingCartContext'
 import { Blog } from './pages/Blog'
+import ViewDetail from './components/ViewDetail'
 function App() {
   
   
@@ -28,6 +29,7 @@ function App() {
      <Route path="/about" element={<About></About>}/>
      <Route path="/store" element={<Store></Store>}/>
      <Route path="/blog" element={<Blog></Blog>}/>
+     <Route path="/:id" element={<ViewDetail></ViewDetail>}/>
    </Routes>
 </Container>
 
