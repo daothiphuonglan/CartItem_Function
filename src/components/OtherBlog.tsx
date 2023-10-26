@@ -9,7 +9,7 @@ const OtherBlog = () => {
                blogs.map((list)=>{
                      return (
                          <div key={list.id} className="grid grid-cols-2 gap-4 my-6">
-                             <div><img className="rounded-full"src={list.image}/></div>
+                             <div><img className=""src={list.image}/></div>
                             <div>
                             <h6>{list.infor}</h6>
                             <p>{list.date}</p>

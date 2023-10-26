@@ -3,7 +3,7 @@ import {useState} from 'react'
 import { useLocalStorage} from '../hooks/useLocalStorage'
 import { CartItem } from '../components/CartItem'
 import { ShoppingCart } from '../components/ShoppingCart'
-import { useNavigate } from 'react-router-dom'
+
 type ShoppingCartProviderProps={
     children:ReactNode
 }
@@ -14,7 +14,7 @@ type ShoppingCartContext = {
     increaseCartQuantity : (id:number)=> void 
     decreaseCartQuantity:(id:number)=> void
     removeFromCart:(id:number)=> void
-    handleNavigate:(id:number)=>void
+   
     cartQuantity: number
     cartItems:CartItem[]
   
@@ -38,7 +38,7 @@ export function ShoppingCartProvider ({children}: ShoppingCartProviderProps){
     const [isOpen, setIsOpen] = useState(false)
     const [cartItems, setCartItems]= useLocalStorage<CartItem[]>("shopping-cart",[])
     
-    const navigate= useNavigate();
+    
     const cartQuantity = cartItems.reduce (
         (quantity,item) => item.quantity+ quantity,0
     )
@@ -90,11 +90,7 @@ export function ShoppingCartProvider ({children}: ShoppingCartProviderProps){
         })
     }
 
-    function handleNavigate(id:number){
-        console.log(id)
-        
-        return navigate(`${id}`)
-    }
+  
 
 
    
@@ -106,7 +102,7 @@ export function ShoppingCartProvider ({children}: ShoppingCartProviderProps){
             removeFromCart,
             openCart,
             closeCart,
-            handleNavigate,
+          
             cartItems,
             cartQuantity
         }}>

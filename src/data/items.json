@@ -1,67 +1,67 @@
 [
     {
       "id": 1,
-      "name": "Book",
+      "name": "Buffalo",
       "price": 10.99,
-      "imgUrl": "/imgs/pizza_1.jpg"
+      "imgUrl": "/imgs/pizza_5.jpg"
     },
     {
       "id": 2,
-      "name": "Computer",
+      "name": "White",
       "price": 1199,
-      "imgUrl": "/imgs/pizza_1.jpg"
+      "imgUrl": "/imgs/pizza_5.jpg"
     },
     {
       "id": 3,
-      "name": "Banana",
+      "name": "Sicilian",
       "price": 1.05,
-      "imgUrl": "/imgs/pizza_3.jpg"
+      "imgUrl": "/imgs/pizza_4.jpg"
     },
     {
       "id": 4,
-      "name": "Car",
+      "name": "White",
       "price": 14000,
       "imgUrl": "/imgs/pizza_4.jpg"
     },
     {
       "id": 5,
-      "name": "Car",
+      "name": "Sicilian",
       "price": 14000,
       "imgUrl": "/imgs/pizza_5.jpg"
     },
     {
       "id": 6,
-      "name": "Car",
+      "name": "Vegetarian",
       "price": 14000,
       "imgUrl": "/imgs/pizza_6.jpg"
     },
     {
       "id": 7,
-      "name": "Car",
+      "name": "Vegetarian",
       "price": 14000,
       "imgUrl": "/imgs/pizza_7.jpg"
     },
     {
       "id": 8,
-      "name": "Car",
+      "name": "white",
       "price": 14000,
       "imgUrl": "/imgs/pizza_8.jpg"
     },
     {
       "id": 9,
-      "name": "Car",
+      "name": "buffalo",
       "price": 14000,
       "imgUrl": "/imgs/pizza_9.jpg"
     },
     {
       "id": 10,
-      "name": "Car",
+      "name": "Vegetarian",
       "price": 14000,
       "imgUrl": "/imgs/pizza_4.jpg"
     },
     {
       "id": 11,
-      "name": "Car",
+      "name": "Vegetarian",
       "price": 14000,
       "imgUrl": "/imgs/pizza_4.jpg"
     },
@@ -73,19 +73,19 @@
     },
     {
       "id": 13,
-      "name": "Car",
+      "name": "Sicilian",
       "price": 14000,
       "imgUrl": "/imgs/pizza_4.jpg"
     },
     {
       "id": 14,
-      "name": "Car",
+      "name": "white",
       "price": 14000,
       "imgUrl": "/imgs/pizza_4.jpg"
     },
     {
       "id": 15,
-      "name": "Car",
+      "name": "Buffalo",
       "price": 14000,
       "imgUrl": "/imgs/pizza_4.jpg"
     }

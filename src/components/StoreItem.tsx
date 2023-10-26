@@ -1,7 +1,7 @@
 import { Button, Card } from "react-bootstrap"
 import { formatCurrency } from "../utilities/formatCurrency"
 import { useShoppingCart } from "../context/ShoppingCartContext"
-import { useNavigate } from "react-router-dom"
+
 
 
 
@@ -19,14 +19,13 @@ export function StoreItem ({id,name,price,imgUrl}:StoreItemProps){
       increaseCartQuantity,
       decreaseCartQuantity, 
       removeFromCart,
-      handleNavigate
+      
       }
       = useShoppingCart()
     
       const quantity= getItemQuantity(id)
 
-     
-     const navigate = useNavigate();
+   
 
      
    
@@ -45,11 +44,7 @@ export function StoreItem ({id,name,price,imgUrl}:StoreItemProps){
           <span className="ms-2 text-muted">{formatCurrency(price)}</span>
         </Card.Title>
         
-        <Button
-
-        onClick ={()=>handleNavigate(id)}
-        
-        >More Detail</Button>
+      
 
        
       

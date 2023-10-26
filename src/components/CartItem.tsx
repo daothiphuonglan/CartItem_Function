@@ -8,7 +8,7 @@ type CartItemProps={
 }
 
 export function CartItem({id,quantity}: CartItemProps){
-   const {removeFromCart,size}= useShoppingCart()
+   const {removeFromCart}= useShoppingCart()
    const item = storeItems.find(i=> i.id===id)
 
    if(item==null)  return null
@@ -22,7 +22,7 @@ export function CartItem({id,quantity}: CartItemProps){
           <div className='me-auto'>
             <div >
                  {item.name} {" "}
-                 {size}
+                
                  {quantity  >1 && (
                     <span className="text-muted"
                     style ={{fontSize:".65rem"}}
